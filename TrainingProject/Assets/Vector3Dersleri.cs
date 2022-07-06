@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Vector3Dersleri : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start() 
     {
-        
+        Vector3 vektor = transform.position;
+        float uzunluk = vektor.magnitude;
+        Debug.Log(uzunluk);     
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(Vector3.right * Time.deltaTime);
-    }
+   
+
+    
 }
+
+
+
+//  public  void OncekiMethod()
+//  {
+//   //Start is called before the first frame update
+//      void Start()
+//   {
+        
+//   }
+
+// // Update is called once per frame
+//      void Update()
+//      {
+//         transform.Translate(Vector3.one * Time.deltaTime);
+//      }
+//  }
